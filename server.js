@@ -424,8 +424,10 @@ async function serveStatic(req, res) {
 
 async function app(req, res) {
   try {
-    const settings = await readSettings();
-    if (req.url.startsWith("/api/")) return await handleApi(req, res, settings);
+    if (req.url.startsWith("/api/")) {
+      const settings = await readSettings();
+      return await handleApi(req, res, settings);
+    }
     return await serveStatic(req, res);
   } catch (error) {
     console.error(error);

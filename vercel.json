@@ -1,4 +1,24 @@
 {
+  "functions": {
+    "api/index.js": {
+      "includeFiles": [
+        "index.html",
+        "admin.html",
+        "aviso-legal.html",
+        "politica-de-cookies.html",
+        "politica-de-privacidad.html",
+        "terminos-y-condiciones.html",
+        "styles.css",
+        "admin.css",
+        "legal.css",
+        "script.js",
+        "admin.js",
+        "robots.txt",
+        "sitemap.xml",
+        "assets/**"
+      ]
+    }
+  },
   "rewrites": [
     {
       "source": "/api/:path*",
@@ -7,6 +27,14 @@
     {
       "source": "/admin",
       "destination": "/admin.html"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "/assets/favicon.svg"
+    },
+    {
+      "source": "/favicon.png",
+      "destination": "/assets/favicon.svg"
     },
     {
       "source": "/politica-de-privacidad",
