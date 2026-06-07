@@ -7,23 +7,23 @@
     },
     {
       "src": "/admin",
-      "dest": "/api/index.js"
+      "dest": "/admin.html"
     },
     {
       "src": "/politica-de-privacidad",
-      "dest": "/api/index.js"
+      "dest": "/politica-de-privacidad.html"
     },
     {
       "src": "/aviso-legal",
-      "dest": "/api/index.js"
+      "dest": "/aviso-legal.html"
     },
     {
       "src": "/politica-de-cookies",
-      "dest": "/api/index.js"
+      "dest": "/politica-de-cookies.html"
     },
     {
       "src": "/terminos-y-condiciones",
-      "dest": "/api/index.js"
+      "dest": "/terminos-y-condiciones.html"
     },
     {
       "src": "/",
