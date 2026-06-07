@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cotiza Fletes Chile">
+  <rect width="64" height="64" rx="12" fill="#0b4f49"/>
+  <path d="M14 22h24v19H14z" fill="#ffffff"/>
+  <path d="M38 28h8l6 7v6H38z" fill="#d89b35"/>
+  <circle cx="23" cy="44" r="5" fill="#10231f"/>
+  <circle cx="46" cy="44" r="5" fill="#10231f"/>
+  <circle cx="23" cy="44" r="2" fill="#ffffff"/>
+  <circle cx="46" cy="44" r="2" fill="#ffffff"/>
+</svg>

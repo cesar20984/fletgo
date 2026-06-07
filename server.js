@@ -6,6 +6,7 @@ const path = require("path");
 const { readSettings, writeSettings } = require("./db");
 
 const ROOT = __dirname;
+const PUBLIC_ROOT = path.join(ROOT, "public");
 const PORT = Number(process.env.PORT || 4174);
 
 const MIME_TYPES = {
@@ -395,8 +396,8 @@ function safeStaticPath(urlPath) {
   const decoded = decodeURIComponent(urlPath.split("?")[0]);
   let route = decoded === "/" ? "/index.html" : decoded === "/admin" ? "/admin.html" : decoded;
   if (!path.extname(route)) route = `${route}.html`;
-  const filePath = path.normalize(path.join(ROOT, route));
-  if (!filePath.startsWith(ROOT) || filePath.includes(`${path.sep}data${path.sep}`)) return null;
+  const filePath = path.normalize(path.join(PUBLIC_ROOT, route));
+  if (!filePath.startsWith(PUBLIC_ROOT)) return null;
   return filePath;
 }
 
