@@ -49,6 +49,12 @@ async function ensureNeon() {
   return neonSql;
 }
 
+function assertWritableLocalDatabase() {
+  if (process.env.VERCEL || process.env.NODE_ENV === "production") {
+    throw new Error("DATABASE_URL no esta configurado. En Vercel debes conectar Neon y agregar DATABASE_URL.");
+  }
+}
+
 async function writeSettingsToNeon(settings) {
   const sql = neonSql || neon(process.env.DATABASE_URL);
   for (const [key, value] of Object.entries({ ...DEFAULT_SETTINGS, ...settings })) {
@@ -61,6 +67,7 @@ async function writeSettingsToNeon(settings) {
 }
 
 async function ensureSqlite() {
+  assertWritableLocalDatabase();
   if (sqliteDb) return sqliteDb;
 
   await fsp.mkdir(DATA_DIR, { recursive: true });

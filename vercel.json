@@ -1,37 +1,28 @@
 {
-  "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/index.js"
+      "source": "/api/:path*",
+      "destination": "/api/index.js"
     },
     {
-      "src": "/admin",
-      "dest": "/admin.html"
+      "source": "/admin",
+      "destination": "/admin.html"
     },
     {
-      "src": "/politica-de-privacidad",
-      "dest": "/politica-de-privacidad.html"
+      "source": "/politica-de-privacidad",
+      "destination": "/politica-de-privacidad.html"
     },
     {
-      "src": "/aviso-legal",
-      "dest": "/aviso-legal.html"
+      "source": "/aviso-legal",
+      "destination": "/aviso-legal.html"
     },
     {
-      "src": "/politica-de-cookies",
-      "dest": "/politica-de-cookies.html"
+      "source": "/politica-de-cookies",
+      "destination": "/politica-de-cookies.html"
     },
     {
-      "src": "/terminos-y-condiciones",
-      "dest": "/terminos-y-condiciones.html"
-    },
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/terminos-y-condiciones",
+      "destination": "/terminos-y-condiciones.html"
     }
   ]
 }
