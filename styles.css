@@ -237,6 +237,7 @@ h1 {
 .services,
 .seo-content,
 .faq,
+.contact-section,
 .site-footer {
   padding: clamp(58px, 8vw, 106px) clamp(18px, 5vw, 72px);
 }
@@ -562,6 +563,26 @@ textarea:focus {
   background: var(--paper);
 }
 
+.contact-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(20px, 4vw, 42px);
+  align-items: center;
+  background: var(--white);
+}
+
+.contact-section p {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
 details {
   max-width: 900px;
   margin-top: 12px;
@@ -674,8 +695,13 @@ details p {
   }
 
   .quote-section,
-  .seo-content {
+  .seo-content,
+  .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
   }
 
   .service-grid {
@@ -693,6 +719,7 @@ details p {
   }
 
   .hero-actions .button,
+  .contact-actions .button,
   .form-actions .button {
     width: 100%;
   }
