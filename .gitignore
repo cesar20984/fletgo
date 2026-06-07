@@ -1,0 +1,5 @@
+data/settings.json
+data/app.db
+data/app.db-*
+node_modules/
+.env

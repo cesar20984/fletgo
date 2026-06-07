@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel de Control | Cotizador de Fletes</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#11312d">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <section class="admin-hero" aria-labelledby="admin-title">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">CF</span>
+          <span>Cotiza Fletes Chile</span>
+        </a>
+        <p class="eyebrow">Panel privado</p>
+        <h1 id="admin-title">Configura tu cotizador sin tocar codigo</h1>
+        <p>Actualiza el nombre del negocio, el WhatsApp de recepcion y la clave de Google Maps. La API key se guarda en el servidor y no se entrega al sitio publico.</p>
+      </section>
+
+      <section class="admin-card" id="setupPanel" hidden>
+        <h2>Crear acceso administrador</h2>
+        <form id="setupForm">
+          <label>
+            <span>Nueva clave</span>
+            <input type="password" name="password" minlength="8" autocomplete="new-password" required>
+          </label>
+          <button class="button primary" type="submit">Crear acceso</button>
+        </form>
+      </section>
+
+      <section class="admin-card" id="loginPanel" hidden>
+        <h2>Ingresar</h2>
+        <form id="loginForm">
+          <label>
+            <span>Clave de administrador</span>
+            <input type="password" name="password" autocomplete="current-password" required>
+          </label>
+          <button class="button primary" type="submit">Entrar</button>
+        </form>
+      </section>
+
+      <section class="admin-card" id="settingsPanel" hidden>
+        <div class="admin-card-header">
+          <div>
+            <p class="eyebrow">Configuracion</p>
+            <h2>Datos del negocio</h2>
+          </div>
+          <button class="button secondary" type="button" id="logoutBtn">Salir</button>
+        </div>
+        <form id="settingsForm">
+          <label>
+            <span>Nombre del negocio</span>
+            <input type="text" name="businessName" required>
+          </label>
+          <label>
+            <span>Numero WhatsApp</span>
+            <input type="tel" name="whatsapp" placeholder="56912345678" required>
+          </label>
+          <label>
+            <span>Correo de cotizaciones</span>
+            <input type="email" name="email" placeholder="ventas@empresa.cl">
+          </label>
+          <label>
+            <span>Google Maps API key</span>
+            <input type="password" name="googleMapsApiKey" placeholder="Dejar vacio para mantener la actual" autocomplete="off">
+          </label>
+          <p class="admin-help" id="mapsKeyStatus"></p>
+          <div class="admin-actions">
+            <button class="button primary" type="submit">Guardar cambios</button>
+            <button class="button secondary" type="button" id="testMapsBtn">Probar Google Maps</button>
+          </div>
+        </form>
+      </section>
+
+      <p class="form-note" id="adminNote" role="status"></p>
+    </main>
+
+    <script src="admin.js" defer></script>
+  </body>
+</html>

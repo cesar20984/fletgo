@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "functions": {
+    "server.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/admin",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/politica-de-privacidad",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/aviso-legal",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/politica-de-cookies",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/terminos-y-condiciones",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}

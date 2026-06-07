@@ -1,0 +1,16 @@
+{
+  "name": "cotizador-fletes-chile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cotizador online para fletes, transporte local y mudanzas en Chile.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
+  }
+}
