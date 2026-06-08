@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tu-dominio.cl/sitemap.xml
+Sitemap: https://fletgo.vercel.app/sitemap.xml

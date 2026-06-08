@@ -5,6 +5,8 @@
   "description": "Cotizador online para fletes, transporte local y mudanzas en Chile.",
   "main": "server.js",
   "scripts": {
+    "build": "node scripts/generate-sitemap.js",
+    "sitemap": "node scripts/generate-sitemap.js",
     "start": "node server.js"
   },
   "engines": {

@@ -31,6 +31,16 @@ Antes de desplegar en Vercel:
 
 El archivo `vercel.json` enruta `/api/*` y las paginas limpias al handler serverless `server.js`.
 
+## Sitemap
+
+El sitemap se genera automaticamente escaneando los archivos `public/**/*.html`.
+
+```powershell
+npm run sitemap
+```
+
+El script excluye paginas con `meta name="robots" content="noindex"`, como `/admin`, y escribe `public/sitemap.xml` y `public/robots.txt`. Para cambiar el dominio usado en el sitemap, define `SITE_URL`, por ejemplo `https://fletgo.vercel.app`.
+
 ## Google Maps
 
 En Google Cloud necesitas:
