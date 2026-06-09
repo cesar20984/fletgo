@@ -715,13 +715,7 @@ details p {
   }
 
   .hero img {
-    object-position: center center;
-  }
-
-  .hero-overlay {
-    background:
-      linear-gradient(180deg, rgba(9, 27, 24, 0.84) 0%, rgba(9, 27, 24, 0.68) 42%, rgba(9, 27, 24, 0.34) 68%, rgba(9, 27, 24, 0.12) 100%),
-      linear-gradient(90deg, rgba(9, 27, 24, 0.32) 0%, rgba(9, 27, 24, 0.12) 58%, rgba(9, 27, 24, 0.02) 100%);
+    object-position: 62% center;
   }
 
   .hero-actions .button,
