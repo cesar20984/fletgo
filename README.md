@@ -6,7 +6,7 @@ Sitio rapido para cotizar fletes, transporte local y mudanzas en Chile. Incluye 
 
 Actualiza estos valores:
 
-- `index.html`: reemplaza `https://www.tu-dominio.cl/` en canonical, Open Graph y schema.
+- El dominio canonico ya esta configurado como `https://fletgo.cl/`. Si cambia en el futuro, actualiza canonical, Open Graph, schema, `robots.txt` y `sitemap.xml`.
 - `robots.txt`: reemplaza la URL del sitemap.
 - `sitemap.xml`: reemplaza la URL principal y actualiza `lastmod`.
 
@@ -39,7 +39,7 @@ El sitemap se genera automaticamente escaneando los archivos `public/**/*.html`.
 npm run sitemap
 ```
 
-El script excluye paginas con `meta name="robots" content="noindex"`, como `/admin`, y escribe `public/sitemap.xml` y `public/robots.txt`. Para cambiar el dominio usado en el sitemap, define `SITE_URL`, por ejemplo `https://fletgo.vercel.app`.
+El script excluye paginas con `meta name="robots" content="noindex"`, como `/admin`, y escribe `public/sitemap.xml` y `public/robots.txt`. Para cambiar el dominio usado en el sitemap, define `SITE_URL`, por ejemplo `https://fletgo.cl`.
 
 ## Google Maps
 

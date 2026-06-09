@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fletgo.vercel.app/sitemap.xml
+Sitemap: https://fletgo.cl/sitemap.xml

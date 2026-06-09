@@ -3,7 +3,7 @@ const path = require("path");
 
 const ROOT = path.join(__dirname, "..");
 const PUBLIC_DIR = path.join(ROOT, "public");
-const SITE_URL = (process.env.SITE_URL || "https://fletgo.vercel.app").replace(/\/+$/, "");
+const SITE_URL = (process.env.SITE_URL || "https://fletgo.cl").replace(/\/+$/, "");
 
 function walkHtmlFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
