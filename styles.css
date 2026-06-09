@@ -715,7 +715,7 @@ details p {
   }
 
   .hero img {
-    object-position: 62% center;
+    object-position: center center;
   }
 
   .hero-actions .button,
