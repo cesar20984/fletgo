@@ -629,6 +629,15 @@ details p {
   font-size: 0.9rem;
 }
 
+.site-footer .sitiova-credit {
+  color: #20dff2;
+  font-weight: 800;
+}
+
+.site-footer .sitiova-credit:hover {
+  color: #20dff2;
+}
+
 @keyframes heroZoom {
   from {
     transform: scale(1.04);
